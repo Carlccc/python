@@ -133,24 +133,31 @@ info = {
 3：如果用户输入的商品序号有误，则提示输入有误，并重新输入。
 4：用户输入Q或者q，退出程序。
 '''
-
 # goods = [
 #     {'name':'显卡','price':'3500'},
 #     {'name':'CPU','price':'2500'},
 #     {'name':'内存','price':'1500'},
 #     {'name':'主板','price':'1800'}
 # ]
-# print(
-#     ' 1.' + goods[0]['name'] + ' ' + goods[0]['price'] + '\n',
-#     '2.' + goods[1]['name'] + ' ' + goods[1]['price'] + '\n',
-#     '3.' + goods[2]['name'] + ' ' + goods[2]['price'] + '\n',
-#     '4.' + goods[3]['name'] + ' ' + goods[3]['price']
-# )
+
+# for x in range(0,len(goods)):
+#     serial_number = x + 1
+#     print(str(serial_number) + '. ' + goods[x]['name'] + ' ' + goods[x]['price'])
 
 # while True:
-
 #     user_number = input('请输入你的编号:')
 
+#     if user_number.lower() == 'q':
+#         break   
+
+#     elif user_number.isdigit() and 0 < int(user_number) < len(goods):
+#         print(user_number + '.' + goods[int(user_number)]['name'] + ' ' + goods[int(user_number)]['price'],end='\n')
+
+#     else:
+#         print('输入有误，请重新输入')
+
+     
+'''
 #     if user_number == '1':
 #         print('1.' + goods[0]['name'] + ' ' + goods[0]['price'],end='\n')
 #     elif user_number == '2':
@@ -162,9 +169,7 @@ info = {
 #     elif user_number.lower() == 'q':
 #         break
 
-#     else:
-#         print('输入有误，请重新输入')
-
+'''
 
 #0401.写代码，有如下列表，按照要求实现每一个功能。
 
@@ -306,16 +311,21 @@ lis = [2, 3, "k", ["qwe", 20, ["k1", ["tt", 3, "1"]], 89], "ab", "adv"]
 用户输入索引后，将指定商品的内容拼接打印，如：用户输入0，则打印 您选择的商品是汽车。
 '''
 # googs = ['汽车','飞机','火箭']
+# resp = int(input('请输入你的序号：'))
+
 # for i in range(0,len(googs)):
 #     print(i,googs[i])
 
-# resp = int(input('请输入你的序号：'))
-# if resp == 0:
+# print('你选择的商品是' + googs[resp])
+
+# # # # if resp == 0:
 # 	print('你选择的商品是汽车')
 # elif resp == 1:
 #     print('你选择的商品是飞机')
 # elif resp == 2:
 #     print('你选择的商品是火箭')
+
+
 
 # 0407.请用代码实现
 
